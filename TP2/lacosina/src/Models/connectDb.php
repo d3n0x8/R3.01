@@ -4,14 +4,14 @@ try{
     //connexion à la base de données
     //modifier les paramètres de connexion
     //(host, dbname, user, password)
-    $host = "localhost";
+    $host = "db";
     $dbname = "lacosina";
-    $user = "root";
-    $password = "";
+    $user = "myuser";
+    $password = "monpassword";
 
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
 }
 catch(Exception $e)
 {
-        die("Erreur: ".$e->getMessage());
+        echo "Connection failed: ".$e->getMessage();
 }

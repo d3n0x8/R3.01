@@ -1,0 +1,24 @@
+services:
+  web:
+    image: php:8.2-apache
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    volumes:
+      - ./src:/var/www/html # le dossier qui va contenir le projet
+
+  db:
+    image: mysql:8.1.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: td1 # le nom de la db mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
