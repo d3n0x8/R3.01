@@ -14,9 +14,18 @@
             require_once __DIR__.DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'Controllers'.DIRECTORY_SEPARATOR.'homeController.php';
             break;
         case 'contact':
-            require_once __DIR__.DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'Controllers'.DIRECTORY_SEPARATOR.'contactController.php';
+            require_once("./src/Controllers/contactController.php");
+            break;
+        case 'ajout':
+            require_once("./src/Controllers/ajoutController.php");
+            break;
+        case 'enregistrerContact': // Ensure this matches the form action
+            require_once('./src/Controllers/enregistrerContactController.php');
+            break;
+        case 'enregistrerRecette': // Ensure this matches the form action
+            require_once('./src/Controllers/enregistrerRecetteController.php');
             break;
     }
-
+    
     //ajout du pied de page 
     require_once(__DIR__.DIRECTORY_SEPARATOR.'src'.DIRECTORY_SEPARATOR.'Views'.DIRECTORY_SEPARATOR.'footer.php');

@@ -20,6 +20,8 @@ crossorigin="anonymous"></script>
                 <li class="nav-item">
                     <a class="nav-link" href="?c=contact">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="?c=ajout">Ajouter une recette</a>
             </ul>
         </nav>
 </head>

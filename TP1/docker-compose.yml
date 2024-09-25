@@ -16,7 +16,7 @@ services:
     image: mysql:8.0
     command: --default-authentication-plugin=mysql_native_password
     environment:
-      MYSQL_ROOT_PASSWORD: MySecurePwd
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: lacosina
       MYSQL_USER: myuser
       MYSQL_PASSWORD: monpassword
