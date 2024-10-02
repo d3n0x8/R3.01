@@ -18,10 +18,14 @@ crossorigin="anonymous"></script>
                     <a class="nav-link" href="?c=home">Accueil</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="?c=recette">Recettes</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="?c=contact">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="?c=ajout">Ajouter une recette</a>
+                </li>
             </ul>
         </nav>
 </head>

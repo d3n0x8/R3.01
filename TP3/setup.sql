@@ -1,4 +1,4 @@
--- Active: 1727245053776@@127.0.0.1@3306@lacosina
+-- Active: 1727852615264@@localhost@3306@lacosina
 CREATE TABLE RECETTES (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titre VARCHAR(100) NOT NULL,
@@ -14,3 +14,5 @@ CREATE TABLE FORMULAIRE(
     description TEXT,
     date_creation DATETIME
 )
+
+SELECT * FROM RECETTES
